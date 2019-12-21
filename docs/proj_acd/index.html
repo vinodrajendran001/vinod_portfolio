@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Academic Projects · Vinod</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Effeciently Approximating Chemical Properties via Deep Learning (Master thesis)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Academic Projects · Vinod"/><meta property="og:type" content="website"/><meta property="og:url" content="https://vinodrajendran001.github.io/vinod_portfolio/"/><meta property="og:description" content="## Effeciently Approximating Chemical Properties via Deep Learning (Master thesis)"/><meta property="og:image" content="https://vinodrajendran001.github.io/vinod_portfolio/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://vinodrajendran001.github.io/vinod_portfolio/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/vinod_portfolio/img/profile.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/vinod_portfolio/js/scrollSpy.js"></script><link rel="stylesheet" href="/vinod_portfolio/css/main.css"/><script src="/vinod_portfolio/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/vinod_portfolio/"><img class="logo" src="/vinod_portfolio/img/profile.png" alt="Vinod"/><h2 class="headerTitleWithLogo">Vinod</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/vinod_portfolio/docs/proj_ind" target="_self">Projects</a></li><li class=""><a target="_self">Resume</a></li><li class=""><a target="_self">Blog</a></li><li class=""><a href="/vinod_portfolio/help" target="_self">Contact</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Academic Projects</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Industry Projects</h3><ul class=""><li class="navListItem"><a class="navItem" href="/vinod_portfolio/docs/proj_ind">Industry Projects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Academic Projects</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/vinod_portfolio/docs/proj_acd">Academic Projects</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Academic Projects</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="effeciently-approximating-chemical-properties-via-deep-learning-master-thesis"></a><a href="#effeciently-approximating-chemical-properties-via-deep-learning-master-thesis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Effeciently Approximating Chemical Properties via Deep Learning (Master thesis)</h2>
+<p>The accurate and efficient prediction of molecular properties throughout chemical compound space is a critical ingredient towards rational compound design in chemical and pharmaceutical industries.
+In this work, I have evaluated number of well established deep learning methods to predict the quantum-mechanical molecular properties directly from a raw molecular geometry. Following which the influence of these methods on various molecular representations are examined. Finally, bayesian optimization methods are explored to fine tune the hyper parameters.</p>
+<p align="center">
+  <img width="600" height="280" src="../img/thesis_workflow.PNG">
+  <br>
+  <em> (a) Coloumb matrix representation (b) Schematic view of Bag of Bonds (BoB) representation (c) Transparency of the deep neural network while predicting molecular properties.
+  </em>
+</p>
+<p>Through this work, I have demonstrated that deep learning methods can be successfully applied to accuractely and efficiently predict molecular properties in chemical cound space. Also, I have set a new benchmark accuracy for some of the molecular properties and reported novel results using new and large datasets.</p>
+<p>V. Rajendran: Efficiently Approximating Chemical Properties via Deep Learning, Master's thesis, Technical Universty of Munich, April 2016.<a href="https://drive.google.com/open?id=0B0rphpME2J_raWRVSHZXcjItNW8">[pdf]</a> <a href="https://drive.google.com/open?id=0B0rphpME2J_rTmlKcmRNS2xUU2s">[ppt]</a></p>
+<h2><a class="anchor" aria-hidden="true" id="music-genre-classification-with-the-million-song-dataset"></a><a href="#music-genre-classification-with-the-million-song-dataset" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Music Genre Classification with the Million Song Dataset</h2>
+<p>Musical genres have no strict definitions and boundaries as they are formed through a complex interaction between the public, marketing, historical, and cultural factors. This makes multiclass music
+genre classification a difficult process. In this work, each song only has one genre label. In reality, assigning just one genre to a song can be more challenging when there is some degree of possible overlap between certain genres. In this work, I have built a music genre classification using both audio features and lyrics sentiment features. In addition, a classification model with only audio features as well as lyrics sentiment features are experimented. This involves the tasks such as data merging , data cleaning, reducing tags via clustering, feature extraction and model selection.</p>
+<p align="center">
+  <img width="600" height="250" src="../img/music_img.PNG">
+  <br>
+  <em> Reduced dataset with 10 music genres
+  </em>
+</p>
+<p>I could able to achieve 68.11% accuracy using only audio features. It was concsidered to be 2.28% higher than the one reported in 12th ISMIR 2011 (recent work at that time).</p>
+<p>V. Rajendran et al.: Music Genre Classification,Advanced Data Mining Lab Course, April 2015.<a href="https://drive.google.com/open?id=0B0rphpME2J_rZDRaUjNoeDdmcEU">[ppt]</a></p>
+<h2><a class="anchor" aria-hidden="true" id="research-seminar-on-natural-language-processing-in-relation-to-legal-tasks"></a><a href="#research-seminar-on-natural-language-processing-in-relation-to-legal-tasks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Research seminar on natural language processing in relation to legal tasks</h2>
+<p>Techniques of natural language processing(NLP) have been
+under development since the earliest computing machines, and in recent years these techniques have proven to be robust, reliable and efficient enough to lead to commercial products in many areas. The applications include machine translation, word processing, information management, dialogue systems and email understanding but NLP techniques have also been applied to other computing tasks besides these. In this seminar, I presented a concise overview on some of the basic NLP techniques used in Information retrieval systems along with their potentials and ambiguities with respect to English language. Following which the applications of NLP in legal domain are discussed. In particular, text classification and text summarization in legal retrieval system along with their approaches and challenges faced are presented.</p>
+<p align="center">
+  <img width="600" height="250" src="../img/text_process.PNG">
+  <br>
+  <em> (a) Text classification and (b) Text summarization in legal retrieval system
+  </em>
+</p>
+<p>V. Rajendran: Information Retrieval: Natural Language Processing, V. Rajendran: Information Retrieval: Natural Language
+Processing, Research Seminar on NLP, Technical Universty of Munich, April 2016.<a href="https://drive.google.com/open?id=0B0rphpME2J_rNmRlb091QlRqRHM">[pdf]</a><a href="https://drive.google.com/open?id=0B0rphpME2J_rZUpuTm5yOFd6NTQ">[ppt]</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/vinod_portfolio/docs/proj_ind"><span class="arrow-prev">← </span><span>Industry Projects</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#effeciently-approximating-chemical-properties-via-deep-learning-master-thesis">Effeciently Approximating Chemical Properties via Deep Learning (Master thesis)</a></li><li><a href="#music-genre-classification-with-the-million-song-dataset">Music Genre Classification with the Million Song Dataset</a></li><li><a href="#research-seminar-on-natural-language-processing-in-relation-to-legal-tasks">Research seminar on natural language processing in relation to legal tasks</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/vinod_portfolio/" class="nav-home"><img src="/vinod_portfolio/img/profile.png" alt="Vinod" width="66" height="58"/></a><div><h5>Contact</h5><a href="mailto:vinodr.msec@gmail.com">Email</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/users/4232441/vinod-prime" target="_blank" rel="noreferrer noopener">Stack Overflow</a></div><div><h5>More</h5><a href="https://github.com/vinodrajendran001">GitHub</a><a href="https://www.linkedin.com/in/vinod-rajendran-506536a6">LinkedIn</a></div></section><section class="copyright">Copyright © 2019 Vinod</section></footer></div></body></html>
