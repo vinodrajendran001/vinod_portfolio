@@ -78,7 +78,7 @@ solutions to the neural network parameters. This translates the problem to a low
 <p>The objective of this project is to develop an Automated Defect Recognition (ADR) system equivalent to one inspector so that the overall double scrutiny process can be two times faster.</p>
 <p>I researched and formulated the defect identification problem as anomaly detection to address the following challenges in the current process (1) a smaller number of examples for each defect class, (2) disorganized defect logging process, and (3) prone to new defects. A schematic view of anomaly detection framework I developed using Generative adversarial network (GAN) can be found below.  It builds upon by learning the normalcy of the images from the good images, reuse them to identify and locate the defects in a new X-ray image.  In this way, we can quantify goodness and use that to identify any defect.</p>
 <p align="center">
-  <img width="400" height="150" src="../img/adr_process.PNG">
+  <img width="400" height="150" src="../img/adr_process.png">
   <br>
   <em>Anomaly detection framework. The preprocessing step includes selecting images position-wise and patch extraction. Generative adversarial training is performed on good data and testing is performed on both, unseen good cases and defective images.[2,3]
   </em>
@@ -94,7 +94,7 @@ solutions to the neural network parameters. This translates the problem to a low
 </ul>
 <p>I have implemented and evaluated the algorithms related to both the approaches such as  R-CNN, Fast R-CNN, Faster R-CNN, Yolo and SSD. The algorithm which worked well for this use case is SSD with an accuracy of 75%. Later, I improved the accuracy of the OCR system to 90% by using the computer vision algorithms and commercially of the system tools.</p>
 <p align="center">
-  <img width="400" height="200" src="../img/chr_process.PNG">
+  <img width="400" height="200" src="../img/chr_process.png">
   <br>
   <em> Region-Based and Single Shot detector approach to recognize characters in turbine blade.[4]
   </em>
@@ -105,7 +105,7 @@ solutions to the neural network parameters. This translates the problem to a low
 <p>It falls to the service technician and inspector to collect and analyze the blade and physical evidence to determine the true condition and effect of protective coatings. Human inspectors manually rank the corrosion condition into 5 levels which is subjective due to un-controlled lighting and human error. The aim of this project is to automate this process with reliable output.</p>
 <p>I developed sophisticated prediction models which can learn the relationships between the given image and the corrosion level by just using the pixel information. It builds upon by cropping the root shank region of the historical turbine blade images following which the histogram features are extracted to represent the image in a low-level visual descriptor vector. Finally, machine learning algorithms are applied to build prediction models. The obtained prediction models are reused to determine the corrosion level on new image. I evaluated two machine learning algorithms namely support vector machine (SVM) and random forest (RF). As a result, random forest yielded 91% accuracy which is comparatively higher than SVM.</p>
 <p align="center">
-  <img width="500" height="250" src="../img/corrosion_process.PNG">
+  <img width="500" height="250" src="../img/corrosion_process.png">
   <br>
   <em> Pipeline for learning and predicting the corrosion level.[5]
   </em>
