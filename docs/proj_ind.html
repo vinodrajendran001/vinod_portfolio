@@ -56,11 +56,6 @@
             });
         </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Industry Projects</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="ai-powered-physics-based-tip-clearance-prediction-method"></a><a href="#ai-powered-physics-based-tip-clearance-prediction-method" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>AI-Powered Physics-based Tip Clearance Prediction Method</h2>
 <p>Tip clearance is the distance between tip of rotating airfoil and stationary part. Such clearances introduces aerodynamic losses, decreasing gas turbine efficiency and degradation of blade tips.</p>
-<!-- <p align="center">
-  <img width="400" height="150" src="../img/tipclearance_def.PNG">
-  <br>
-  <em>Tip clearance on turbine blade (left) Schematic of the leakage flow in turbines (right) [Source: https://www.snugt.net/clearance-flow]</em>
-</p> -->
 <p>During the design stage, the effect of tip clearance is measured by running lot of computer modelling and simulations. To impose design exploration at pace, lot of physics-based reduced order model were introduced. However, it involves lot of manual calibrations and requires substantial knowledge to get it work.</p>
 <p>I devised a physics informed neural network to estimate the tip clearance dynamics.  The general architecture of
 physics-informed neural network provided below can give you a feel on how the final network will look like.</p>
@@ -82,12 +77,12 @@ solutions to the neural network parameters. This translates the problem to a low
 <p>Manufacturing of aeroengine fan blade involves lot of process. As one of the inspection process, the blades are X-rayed to identify defects. The inspections are manual and require two inspectors’ scrutiny (double scrutiny). One of the risk in manual process is that it can lead to potentially different standards of X-ray image analysis and sentencing being accepted.</p>
 <p>The objective of this project is to develop an Automated Defect Recognition (ADR) system equivalent to one inspector so that the overall double scrutiny process can be two times faster.</p>
 <p>I researched and formulated the defect identification problem as anomaly detection to address the following challenges in the current process (1) a smaller number of examples for each defect class, (2) disorganized defect logging process, and (3) prone to new defects. A schematic view of anomaly detection framework I developed using Generative adversarial network (GAN) can be found below.  It builds upon by learning the normalcy of the images from the good images, reuse them to identify and locate the defects in a new X-ray image.  In this way, we can quantify goodness and use that to identify any defect.</p>
-<p align="center">
+<!-- <p align="center">
   <img width="500" height="150" src="../img/adr_process.PNG">
   <br>
   <em>Anomaly detection framework. The preprocessing step includes selecting images position-wise and patch extraction. Generative adversarial training is performed on good data and testing is performed on both, unseen good cases and defective images.[2,3]
   </em>
-</p>
+</p> -->
 <p>This piece of work has helped to save 10% cost of the overall inspection process. Also, demonstrated the capability that it can be read across to other visual inspection process where we are short of historical data for each defect class.</p>
 <h2><a class="anchor" aria-hidden="true" id="automated-character-recognition-in-turbine-blade-images"></a><a href="#automated-character-recognition-in-turbine-blade-images" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Automated Character Recognition in Turbine Blade Images</h2>
 <p>Jet engines are made up of almost 25,000 parts. Most of the parts are stamped with serial numbers to avoid mistakes in the production line and supply chain. In turbine blade corrosion level inspection process, the serial numbers are recorded to keep track of it. Each blade has a serial number and also it is engraved in the form of 2D data matrix. The objective of this project is to automatically decode the serial numbers from in-service turbine blades before it proceeds for the next stage of the process.</p>
@@ -110,7 +105,7 @@ solutions to the neural network parameters. This translates the problem to a low
 <p>It falls to the service technician and inspector to collect and analyze the blade and physical evidence to determine the true condition and effect of protective coatings. Human inspectors manually rank the corrosion condition into 5 levels which is subjective due to un-controlled lighting and human error. The aim of this project is to automate this process with reliable output.</p>
 <p>I developed sophisticated prediction models which can learn the relationships between the given image and the corrosion level by just using the pixel information. It builds upon by cropping the root shank region of the historical turbine blade images following which the histogram features are extracted to represent the image in a low-level visual descriptor vector. Finally, machine learning algorithms are applied to build prediction models. The obtained prediction models are reused to determine the corrosion level on new image. I evaluated two machine learning algorithms namely support vector machine (SVM) and random forest (RF). As a result, random forest yielded 91% accuracy which is comparatively higher than SVM.</p>
 <p align="center">
-  <img width="500" height="250" src="../img/corrosion_process.jpg">
+  <img width="500" height="250" src="../img/corrosion_process.PNG">
   <br>
   <em> Pipeline for learning and predicting the corrosion level.[5]
   </em>
