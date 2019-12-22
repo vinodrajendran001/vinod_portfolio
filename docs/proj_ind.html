@@ -78,7 +78,7 @@ solutions to the neural network parameters. This translates the problem to a low
 <p>The objective of this project is to develop an Automated Defect Recognition (ADR) system equivalent to one inspector so that the overall double scrutiny process can be two times faster.</p>
 <p>I researched and formulated the defect identification problem as anomaly detection to address the following challenges in the current process (1) a smaller number of examples for each defect class, (2) disorganized defect logging process, and (3) prone to new defects. A schematic view of anomaly detection framework I developed using Generative adversarial network (GAN) can be found below.  It builds upon by learning the normalcy of the images from the good images, reuse them to identify and locate the defects in a new X-ray image.  In this way, we can quantify goodness and use that to identify any defect.</p>
 <p align="center">
-  <img width="400" height="150" src="../img/adr_process.png">
+  <img width="600" height="200" src="../img/adr_process.png">
   <br>
   <em>Anomaly detection framework. The preprocessing step includes selecting images position-wise and patch extraction. Generative adversarial training is performed on good data and testing is performed on both, unseen good cases and defective images.[2,3]
   </em>
