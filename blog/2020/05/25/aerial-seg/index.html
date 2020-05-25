@@ -80,7 +80,7 @@
 <tr><th style="text-align:center">Satellite Image</th><th style="text-align:center">Label</th><th style="text-align:center">Overlay</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:center"><img width="150" height="150" src="../img/tokyo1_image.png"></td><td style="text-align:center"><img width="150" height="150" src="../img/tokyo1_labels.png"></td><td style="text-align:center"><img width="150" height="150" src="../img/tokyo1_overlap.png"></td></tr>
+<tr><td style="text-align:center"><img width="150" height="150" src="../../../../img/tokyo1_image.png"></td><td style="text-align:center"><img width="150" height="150" src="../../../../img/tokyo1_labels.png"></td><td style="text-align:center"><img width="150" height="150" src="../../../../img/tokyo1_overlap.png"></td></tr>
 </tbody>
 </table>
 <p>The available cities are Berlin, Chicago, Paris, Potsdam, Tokyo and Zurich. I have automated the process to download the dataset and extract labels from the user defined cities. While processing the dataset, I splits the every single image into 4x4 grid and reisze into 300x300 pixels. For each image, the labels are categorized as 0: building red, 1 road blue, 2 BG white. The additional noisy pixels are assigned to 2 BG white. Finally, based on the processed images the train and test set are prepared.</p>
