@@ -14,7 +14,7 @@
         <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/05/25/aerial-seg.html">
         </link>
         <updated>2020-05-25T06:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>In this post, I am exploring how deep learning methods can be used to perform aerial image segmentation on CITY-OSM dataset.</p>
+        <summary type="html"><![CDATA[<p>In this post, I will be illustrating my attempt on how deep learning methods can be used to perform aerial image segmentation using CITY-OSM dataset.</p>
 ]]></summary>
         <author>
             <name>Vinod</name>
