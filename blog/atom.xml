@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vinodrajendran001.github.io/vinod_portfolio/blog</id>
     <title>Vinod Blog</title>
-    <updated>2020-08-01T06:00:00Z</updated>
-    <generator>Feed for Node.js</generator>
+    <updated>2020-08-01T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vinodrajendran001.github.io/vinod_portfolio/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Vinod news and events.</subtitle>
     <logo>https://vinodrajendran001.github.io/vinod_portfolio/img/profile.png</logo>
@@ -11,9 +11,8 @@
     <entry>
         <title type="html"><![CDATA[Machine Learning for Stochastic Signal Analysis]]></title>
         <id>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/08/01/stochastic-signal-analysis.html</id>
-        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/08/01/stochastic-signal-analysis.html">
-        </link>
-        <updated>2020-08-01T06:00:00Z</updated>
+        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/08/01/stochastic-signal-analysis.html"/>
+        <updated>2020-08-01T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>In this blog post, I am trying to learn how stochastic signal analysis techniques can be used in combination with machine learning classifiers for accurate classification and modelling of time series and signals.</p>
 ]]></summary>
         <author>
@@ -23,9 +22,8 @@
     <entry>
         <title type="html"><![CDATA[Aerial Image Segmentation]]></title>
         <id>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/05/25/aerial-seg.html</id>
-        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/05/25/aerial-seg.html">
-        </link>
-        <updated>2020-05-25T06:00:00Z</updated>
+        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/05/25/aerial-seg.html"/>
+        <updated>2020-05-25T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>In this post, I will be illustrating my attempt on how deep learning methods can be used to perform aerial image segmentation using CITY-OSM dataset.</p>
 ]]></summary>
         <author>
