@@ -38,10 +38,12 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: '', label: 'Projects'},
-    {doc: '', label: 'Resume'},
-    {blog: false, label: 'Blog'},
-    {page: '', label: 'Contact'},
+    {page: 'index', label: 'Home'},
+    {doc: 'proj_ind', label: 'Projects'},
+    // {doc: '', label: 'Resume'},
+    {blog: true, label: 'Blog'},
+    {page: 'contact', label: 'Contact'},
+    
   ],
 
   // If you have users set above, you add it here:
@@ -91,6 +93,9 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
+
+  // Google analytics
+  gaTrackingId: 'UA-156234948-1',
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
