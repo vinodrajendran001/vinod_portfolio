@@ -4,7 +4,7 @@
         <title>Vinod Blog</title>
         <link>https://vinodrajendran001.github.io/vinod_portfolio/blog</link>
         <description>The best place to stay up-to-date with the latest Vinod news and events.</description>
-        <lastBuildDate>Sat, 01 Aug 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://vinodrajendran001.github.io/vinod_portfolio/blog</link>
         </image>
         <copyright>Copyright © 2020 Vinod</copyright>
+        <item>
+            <title><![CDATA[Siamese Neural Networks for One-shot Image Recognition]]></title>
+            <link>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning.html</link>
+            <guid>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning.html</guid>
+            <pubDate>Sun, 20 Sep 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>In this blog post, I will be exploring a way on how the deep learning approaches can be used to solve the one-shot learning problem. I will be replicating Koch et al.'s work to understand how a Siamese Neural Network can be used for one-shot image recognition.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Machine Learning for Stochastic Signal Analysis]]></title>
             <link>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/08/01/stochastic-signal-analysis.html</link>
