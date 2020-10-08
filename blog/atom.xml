@@ -2,16 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vinodrajendran001.github.io/vinod_portfolio/blog</id>
     <title>Vinod Blog</title>
-    <updated>2020-09-20T06:00:00.000Z</updated>
+    <updated>2020-10-08T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vinodrajendran001.github.io/vinod_portfolio/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Vinod news and events.</subtitle>
     <logo>https://vinodrajendran001.github.io/vinod_portfolio/img/profile.png</logo>
     <rights>Copyright © 2020 Vinod</rights>
     <entry>
+        <title type="html"><![CDATA[Transformers]]></title>
+        <id>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/10/08/transformers.html</id>
+        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/10/08/transformers.html"/>
+        <updated>2020-10-08T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>In this blog post, I will be exploring the Transformer architecture. To demonstrate its application, I'll be building a sequence classifier and text generation using Transformers.</p>
+<p>Coming soon....</p>
+]]></summary>
+        <author>
+            <name>Vinod</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Siamese Neural Networks for One-shot Image Recognition]]></title>
-        <id>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning.html</id>
-        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning.html"/>
+        <id>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning copy.html</id>
+        <link href="https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning copy.html"/>
         <updated>2020-09-20T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>In this blog post, I will be exploring a way on how the deep learning approaches can be used to solve the one-shot learning problem. I will be replicating Koch et al.'s work to understand how a Siamese Neural Network can be used for one-shot image recognition.</p>
 ]]></summary>
