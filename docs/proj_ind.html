@@ -81,7 +81,7 @@
 </p>
 <p>Once the data transformation step is completed, the final dataset contains the alarm sequences and the corresponding problem-cause-remedy code for each work order. For the transformer based sequence classifier, the instances are alarm codes, tokenized into sequences of codes, and the classification labels are problem-cause-remedy code. The heart of the architecture is a large chain of transformer blocks. That is, the block applies, in sequence: a self attention layer, layer normalization, a feed forward layer (a single MLP applied independently to each vector), and another layer normalization. Residual connections are added around both, before the normalization. The output sequence is averaged to produce a single vector representing the whole sequence. This vector is projected down to a vector with one element per class and softmaxed to produce probabilities.</p>
 <p align="center">
-  <img width="500" height="300" src="../img/transformers_arch.png">
+  <img width="600" height="250" src="../img/transformers_arch.png">
   <br>
   <em>Fig 3: Transformers architecture for problem, cause and remedy recommendation
   </em>
