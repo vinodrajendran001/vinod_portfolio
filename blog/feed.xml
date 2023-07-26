@@ -4,7 +4,7 @@
         <title>Vinod Blog</title>
         <link>https://vinodrajendran001.github.io/vinod_portfolio/blog</link>
         <description>The best place to stay up-to-date with the latest Vinod news and events.</description>
-        <lastBuildDate>Sun, 25 Oct 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Jul 2023 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -13,6 +13,13 @@
             <link>https://vinodrajendran001.github.io/vinod_portfolio/blog</link>
         </image>
         <copyright>Copyright © 2023 Vinod</copyright>
+        <item>
+            <title><![CDATA[Mitosis Detection]]></title>
+            <link>https://vinodrajendran001.github.io/vinod_portfolio/blog/2023/07/26/mitosis-detection.html</link>
+            <guid>https://vinodrajendran001.github.io/vinod_portfolio/blog/2023/07/26/mitosis-detection.html</guid>
+            <pubDate>Wed, 26 Jul 2023 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>In this project, I will be developing an algorithm that support histopathologists in the detection of mitosis on the H&amp;E stained images.</p> <p>To give you a taste of my work, I've prepared a captivating presentation that highlights the essence of this ...</p>]]></description>
+        </item>
         <item>
             <title><![CDATA[Transformers]]></title>
             <link>https://vinodrajendran001.github.io/vinod_portfolio/blog/2020/10/25/transformers.html</link>

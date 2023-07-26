@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Mitosis Detection · Vinod</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="In this project, I will be developing an algorithm that support histopathologists in the detection of mitosis on the H&amp;E stained images."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Mitosis Detection · Vinod"/><meta property="og:type" content="website"/><meta property="og:url" content="https://vinodrajendran001.github.io/vinod_portfolio/blog/2023/07/26/mitosis-detection"/><meta property="og:description" content="In this project, I will be developing an algorithm that support histopathologists in the detection of mitosis on the H&amp;E stained images."/><meta property="og:image" content="https://vinodrajendran001.github.io/vinod_portfolio/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://vinodrajendran001.github.io/vinod_portfolio/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/vinod_portfolio/img/profile.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://vinodrajendran001.github.io/vinod_portfolio/blog/atom.xml" title="Vinod Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://vinodrajendran001.github.io/vinod_portfolio/blog/feed.xml" title="Vinod Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/vinod_portfolio/js/scrollSpy.js"></script><link rel="stylesheet" href="/vinod_portfolio/css/main.css"/><script src="/vinod_portfolio/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/vinod_portfolio/"><img class="logo" src="/vinod_portfolio/img/profile.png" alt="Vinod"/><h2 class="headerTitleWithLogo">Vinod</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/vinod_portfolio/index" target="_self">Home</a></li><li class=""><a href="/vinod_portfolio/docs/proj_ind" target="_self">Projects</a></li><li class=""><a href="/vinod_portfolio/docs/talks" target="_self">Talks</a></li><li class="siteNavGroupActive"><a href="/vinod_portfolio/blog/" target="_self">Side Projects</a></li><li class=""><a href="/vinod_portfolio/contact" target="_self">Contact</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/vinod_portfolio/blog/2023/07/26/mitosis-detection">Mitosis Detection</a></li><li class="navListItem"><a class="navItem" href="/vinod_portfolio/blog/2020/10/25/transformers">Transformers</a></li><li class="navListItem"><a class="navItem" href="/vinod_portfolio/blog/2020/09/20/siamese-NN-one-shot-learning copy">Siamese Neural Networks for One-shot Image Recognition</a></li><li class="navListItem"><a class="navItem" href="/vinod_portfolio/blog/2020/08/01/stochastic-signal-analysis">Machine Learning for Stochastic Signal Analysis</a></li><li class="navListItem"><a class="navItem" href="/vinod_portfolio/blog/2020/05/25/aerial-seg">Aerial Image Segmentation</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/vinod_portfolio/blog/2023/07/26/mitosis-detection">Mitosis Detection</a></h1><p class="post-meta">July 26, 2023</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">Vinod</a></p></div></header><div><span><p>In this project, I will be developing an algorithm that support histopathologists in the detection of mitosis on the H&amp;E stained images.</p>
+<p>To give you a taste of my work, I've prepared a captivating presentation that highlights the essence of this project. You can catch all the details and insights here: &lt;a href=https://docs.google.com/presentation/d/16ApohFR7NkB1aqVO8Jc1ATdNp18EPkizDMBOCcz22RE/edit?usp=sharing&gt;Presentation Link</a>.</p>
+<p>Now, the real treasure trove lies within my GitHub repository, where you'll find the complete code, comprehensive documentation, and step-by-step procedures to reproduce the magic yourself! Feel free to explore the depths of the codebase and immerse yourself in the intricacies of mitosis detection: <a href=https://github.com/vinodrajendran001/mitosis_detection>GitHub repo</a>.</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/vinod_portfolio/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/vinod_portfolio/" class="nav-home"><img src="/vinod_portfolio/img/profile.png" alt="Vinod" width="66" height="58"/></a><div><h5>Get in touch</h5><a href="/vinod_portfolio/contact">Contact</a></div><div><h5>Community</h5><a href="https://stackoverflow.com/users/4232441/vinod-prime" target="_blank" rel="noreferrer noopener">Stack Overflow</a></div><div><h5>More</h5><a href="https://github.com/vinodrajendran001">GitHub</a><a href="https://www.linkedin.com/in/vinod-rajendran-506536a6">LinkedIn</a></div></section><section class="copyright">Copyright © 2023 Vinod</section></footer></div></body></html>
